@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lb_ram_totale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/ram_totale"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lb_ram_usata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/ram_usata"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lb_ram_totale" />
+
+    <TextView
+        android:id="@+id/lb_storage_interno_totale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/storage_interno_totale"
+        app:layout_constraintEnd_toEndOf="@+id/lb_ram_usata"
+        app:layout_constraintStart_toEndOf="@+id/lb_ram_usata"
+        app:layout_constraintTop_toBottomOf="@+id/lb_ram_usata" />
+
+    <TextView
+        android:id="@+id/lb_storage_interno_usato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/storage_interno_usato"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lb_storage_interno_totale" />
+
+    <TextView
+        android:id="@+id/lb_rete_dati_tipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/rete_dati_tipo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lb_wifi" />
+
+    <TextView
+        android:id="@+id/lb_rete_dati_potenza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/rete_dati_potenza"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lb_rete_dati_tipo" />
+
+    <TextView
+        android:id="@+id/tv_storage_interno_usato"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/lb_storage_interno_usato"
+        app:layout_constraintTop_toBottomOf="@+id/tv_storage_interno_totale" />
+
+    <TextView
+        android:id="@+id/lb_wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/wifi_connesso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lb_storage_interno_usato" />
+
+    <TextView
+        android:id="@+id/tv_ram_totale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/lb_ram_totale"
+        app:layout_constraintTop_toTopOf="@+id/lb_ram_totale" />
+
+    <TextView
+        android:id="@+id/tv_ram_usata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/lb_ram_usata"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ram_totale" />
+
+    <TextView
+        android:id="@+id/tv_storage_interno_totale"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/lb_storage_interno_totale"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ram_usata" />
+
+    <TextView
+        android:id="@+id/tv_wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@+id/lb_wifi"
+        app:layout_constraintTop_toBottomOf="@+id/tv_storage_interno_usato" />
+
+    <TextView
+        android:id="@+id/tv_rete_dati_tipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/lb_rete_dati_tipo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_wifi" />
+
+    <TextView
+        android:id="@+id/tv_rete_dati_potenza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/lb_rete_dati_potenza"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rete_dati_tipo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

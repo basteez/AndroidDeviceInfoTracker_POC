@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DeviceInfo Tracker</string>
+    <string name="ram_totale">RAM Totale:</string>
+    <string name="ram_usata">RAM Usata:</string>
+    <string name="storage_interno_totale">Memoria interna totale:</string>
+    <string name="storage_interno_usato">Memoria interna usata:</string>
+    <string name="storage_esterno_totale">Memoria esterna totale:</string>
+    <string name="storage_esterno_usato">Memoria esterna usata:</string>
+    <string name="wifi_connesso">Connesso al Wi-Fi:</string>
+    <string name="rete_dati_tipo">Rete Dati:</string>
+    <string name="rete_dati_potenza">Potenza segnale:</string>
+</resources>
